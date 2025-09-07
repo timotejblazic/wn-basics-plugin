@@ -1,0 +1,5 @@
+{
+  "name": "tb/basics",
+  "type": "winter-plugin",
+  "description": "Starter plugin delivering basic functionalities to extend Winter CMS"
+}
