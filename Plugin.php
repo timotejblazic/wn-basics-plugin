@@ -1,6 +1,8 @@
 <?php namespace Tb\Basics;
 
+use Event;
 use System\Classes\PluginBase;
+use Tb\Basics\Bootstrap\ExtendMenuItems;
 
 class Plugin extends PluginBase
 {
@@ -16,11 +18,11 @@ class Plugin extends PluginBase
 
     public function register(): void
     {
-
+        require_once __DIR__ . '/helpers.php';
     }
 
     public function boot(): void
     {
-
+        (new ExtendMenuItems)->init();
     }
 }
